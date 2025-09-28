@@ -1,0 +1,267 @@
+/* --- Global Reset and Typography --- */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Classic, professional font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #0056b3; /* Primary blue color */
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 3px double #0056b3;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 100px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #007bff; /* Secondary blue */
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* --- Header and Title Page --- */
+.title-page {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #0056b3;
+}
+
+.title-page h2 {
+    color: #555;
+    font-size: 1.5em;
+    margin-top: 10px;
+    border: none;
+}
+
+/* --- Info Card Styling (Modified for Stacking) --- */
+.info-card-container {
+    /* No flex properties here, allowing cards to stack */
+    margin: 20px auto;
+    max-width: 600px; /* Optional: Constrain width for stacked appearance */
+}
+.info-card {
+    background-color: #f4f4f9;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between stacked cards */
+}
+.info-card h3 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.info-card p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+.info-card strong {
+    font-weight: 600;
+}
+
+
+/* --- Lists and Emphasis --- */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* --- Table Styling (Data Summary) --- */
+.data-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+.data-summary th, .data-summary td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: right;
+}
+
+.data-summary th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.data-summary tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-summary tbody tr:hover {
+    background-color: #e0f7ff;
+}
+
+.data-summary td:first-child {
+    text-align: left; /* Country name aligned left */
+}
+
+/* --- Visualization Gallery and Figures --- */
+#visualization-gallery {
+    padding-top: 20px;
+}
+
+figure {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NEW: Style for the smaller pie chart container */
+#visualization-gallery #pie-chart-figure {
+    max-width: 60%; /* Reduce container width to 60% of the main content area */
+    margin: 40px auto; /* Use auto margins to center it */
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+    color: #555;
+    font-size: 1em;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+}
+
+/* --- Methodology Grid (New Feature) --- */
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.methodology-grid > div {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.methodology-grid h3 {
+    color: #0056b3;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* --- References --- */
+.references-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* --- Utility/Special Text --- */
+strong {
+    font-weight: 700;
+}
+
+
+/* --- Certificate Styling (Inlined for simplicity, but included here for reference) --- */
+.certificate {
+    margin-top: 300px;
+    padding: 10px;
+    border: 4px double #0056b3;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.certificate h2 {
+    font-family: 'Georgia', serif;
+    color: #000;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.certificate h3 {
+    font-family: Arial, sans-serif;
+    color: #0056b3;
+    font-size: 1.8em;
+    border-bottom: 3px double #0056b3;
+    padding-bottom: 10px;
+    margin: 25px auto;
+    max-width: 90%;
+}
+.certificate p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #333;
+}
+.certificate .signatures {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+.certificate .signatures > div {
+    width: 30%;
+}
+.certificate .signatures p {
+    border-top: 1px solid #000;
+    padding-top: 5px;
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+.certificate .project-details {
+    font-style: italic;
+    margin: 30px auto;
+    font-size: 1.1em;
+    color: #555;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
